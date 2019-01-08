@@ -2,6 +2,8 @@
   <dictionary name="asats">
     <words>
       <w>asat</w>
+      <w>uimodels</w>
+      <w>viewmodels</w>
     </words>
   </dictionary>
 </component>
