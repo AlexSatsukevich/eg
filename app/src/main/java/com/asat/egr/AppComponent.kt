@@ -1,6 +1,6 @@
 package com.asat.egr
 
-import com.asat.egr.ui.activities.MainActivityModule
+import com.asat.egr.ui.activities.SectionListFragmentModule
 import com.asat.egr.utility.di.ViewModelBuilder
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -12,7 +12,7 @@ import javax.inject.Singleton
     modules = [AndroidSupportInjectionModule::class,
         AppModule::class,
         ViewModelBuilder::class,
-        MainActivityModule::class])
+        SectionListFragmentModule::class])
 
 interface AppComponent : AndroidInjector<EgrApplication> {
 

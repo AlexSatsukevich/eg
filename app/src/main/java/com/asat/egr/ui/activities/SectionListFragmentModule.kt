@@ -9,10 +9,10 @@ import dagger.android.ContributesAndroidInjector
 import dagger.multibindings.IntoMap
 
 @Module
-internal abstract class MainActivityModule {
+internal abstract class SectionListFragmentModule {
 
     @ContributesAndroidInjector
-    internal abstract fun mainActivity(): MainActivity
+    internal abstract fun sectionListFragment(): SectionListFragment
 
     @Binds
     @IntoMap
