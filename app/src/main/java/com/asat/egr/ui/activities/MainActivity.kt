@@ -3,7 +3,6 @@ package com.asat.egr.ui.activities
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.asat.egr.R
-import com.asat.egr.ui.uimodels.GrammarSection
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +20,13 @@ class MainActivity : AppCompatActivity() {
             .commit()
     }
 
-    fun showSection(section:GrammarSection){
+    fun showSection(sectionId:Int){
+        val fragment = SectionDetailsFragment.newInstance(sectionId)
 
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_container, fragment, SectionDetailsFragment::class.java.simpleName)
+            .addToBackStack(null)
+            .commit()
     }
 }

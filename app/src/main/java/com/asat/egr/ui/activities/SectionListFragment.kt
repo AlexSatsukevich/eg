@@ -58,6 +58,8 @@ class SectionListFragment : Fragment(), SectionRecyclerViewAdapter.OnItemClickLi
     }
 
     override fun onItemClick(position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val mainActivity = activity as MainActivity
+
+        mainActivity.showSection(position)
     }
 }
